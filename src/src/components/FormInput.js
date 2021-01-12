@@ -6,13 +6,13 @@ import {ThemeContext} from "../hooks/ThemeProvider"
 function FormInput(){
     const {dispatch} = useContext(TodoContext)
     const { styles} = useContext(ThemeContext)
-    const [todo, setTodo] = useState()
+    const [todo, setTodo] = useState('')
 
 
 
     const addTodo = (e)=>{
         e.preventDefault()
-        if(todo !== ""){
+        if(todo !== ''){
             dispatch({type: "ADD_TODO", task: todo})
             setTodo('')
         }
