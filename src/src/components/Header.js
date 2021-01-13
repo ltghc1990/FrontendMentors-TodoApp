@@ -7,7 +7,7 @@ export default function Header(){
     return(
         <header className="header">
             <h3>TODO</h3>
-            <div onClick={()=>setThemeValue()} style={{backgroundColor: "none"}}>
+            <div className="hover" onClick={()=>setThemeValue()} style={{backgroundColor: "none"}}>
                 <img src={styles.modeIcon} />             
             </div>
         </header>

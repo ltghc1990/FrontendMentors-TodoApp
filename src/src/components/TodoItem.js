@@ -19,7 +19,7 @@ export default function TodoItem({styles, todo}){
                 style={{color: styles.textColor, textDecoration: todo.completed ? "line-through" : "none"}}>
                     {todo.task}
             </div>
-            <div 
+            <div className="hover"
                 onClick={()=>dispatch({type: "DELETE_TODO", id: todo.id})}>
                 <img src={deleteIcon}/>
             </div>

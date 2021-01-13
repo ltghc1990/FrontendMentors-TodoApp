@@ -76,7 +76,6 @@ body {
   padding: 12px;
   border: none;
   font-size: 18px;
-
   border-radius: 5px;
 }
 
@@ -87,16 +86,12 @@ body {
 
 div {
   font-weight: 900;
-}
-
-a {
-  display: block;
   transition: transform 0.2s ease-in;
 }
 
-a:hover {
-  transform: scale(1.15);
-  border: 1px solid red;
+.hover:hover {
+  transform: scale(1.45);
+  cursor: pointer;
 }
 
 @media (min-width: 800px) {
@@ -105,5 +100,19 @@ a:hover {
   }
   .ltMode {
     background-image: url("./Images/bg-desktop-light.jpg");
+  }
+
+  .header h3 {
+    font-size: 2rem;
+    letter-spacing: 14px;
+  }
+
+  .inputBox {
+    padding: 16px 34px;
+    font-size: 20px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
   }
 }

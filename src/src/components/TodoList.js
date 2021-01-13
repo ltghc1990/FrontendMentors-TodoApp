@@ -6,8 +6,10 @@ import TodoItem from "./TodoItem"
 
 
 export default function TodoList(){
-    const {todos} = useContext(TodoContext)
+    const {todos, num} = useContext(TodoContext)
     const {styles} = useContext(ThemeContext)
+
+     
 
     let list = todos.map((todo)=>{
         return(
@@ -18,6 +20,8 @@ export default function TodoList(){
     return(
         <ul className="listContainer" style={{backgroundColor: styles.bgColor}}>
             {list}
+            <div 
+                style={{ color: styles.textColor, padding: "5px 20px"}}>{num} items left</div>
         </ul>
     )
    
